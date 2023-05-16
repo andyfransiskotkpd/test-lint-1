@@ -13,7 +13,7 @@ permissions:
 jobs:
   golangci:
     name: lint
-    runs-on: [runnerset=default-runners]
+    runs-on: ubuntu-latest
     env: 
       GO111MODULE: off
     steps:
