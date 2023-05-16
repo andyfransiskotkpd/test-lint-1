@@ -5,5 +5,10 @@ import (
 )
 
 func main() {
-	fmt.Println("TEST ========")
+
+	const (
+		MockVar = "MOCK Variable"
+	)
+
+	fmt.Println("TEST ========", MockVar)
 }
