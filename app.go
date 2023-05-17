@@ -7,7 +7,7 @@ import (
 func main() {
 
 	const (
-		MockVar = "MOCK Variables 1"
+		MockVar = "MOCK Variables 1s"
 	)
 
 	fmt.Println("TEST ========", MockVar)
