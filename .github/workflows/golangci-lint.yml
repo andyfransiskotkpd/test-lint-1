@@ -13,14 +13,12 @@ permissions:
 jobs:
   golangci:
     name: lint
-    runs-on: [runnerset=default-runners]
+    runs-on: ubuntu-latest
     env: 
       GO111MODULE: off
     steps:
       - name: Checkout search content repository
-        uses: actions/checkout@v3
-        with:
-          token: ${{ secrets.GOLANGLINT_CI }}
+        uses: actions/checkout@v3 
       - run: git config --global --add url."git@github.com:".insteadOf "https://github.com/"
       - name: Set Up Go
         uses: actions/setup-go@v3
